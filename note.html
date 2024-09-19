@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" defer></script>
+		<script
+			src="https://kit.fontawesome.com/582b9644f7.js"
+			crossorigin="anonymous"></script>
+		<link
+			rel="shortcut icon"
+			href="assets/microphone-lines-solid.svg"
+			type="image/x-icon" />
+		<title>Vocal-logs</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo">Vocal-logs</div>
+			<!-- <nav>
+				<ul>
+					<li><a href="#">How to Use</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+				</ul>
+			</nav> -->
+		</header>
+		<main>
+			<div class="main-stuff">
+				<div class="top">
+					<div class="title" contenteditable></div>
+					<div class="start-stop">
+						<button class="start" title="turn mic on/off">
+							<i
+								class="fas fa-microphone-alt"
+								style="
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 38px;
+								"></i>
+						</button>
+					</div>
+				</div>
+
+				<hr />
+				<div class="textarea" contenteditable></div>
+				<hr />
+				<div class="controls">
+					<div class="features">
+						<div class="children new-file" title="new note">
+							<i class="fa-solid fa-file-circle-plus"></i>
+						</div>
+						<!-- <div class="children my-files" title="saved notes">
+							<i class="fa-regular fa-folder-open"></i>
+						</div> -->
+						<!-- <div class="children save" title="save note">
+							<i class="fa-solid fa-floppy-disk"></i>
+						</div> -->
+						<div class="children zoom-in" title="increase font-size">
+							<i class="fa-solid fa-magnifying-glass-plus"></i>
+						</div>
+						<div class="children zoom-out" title="decrease font-size">
+							<i class="fa-solid fa-magnifying-glass-minus"></i>
+						</div>
+					</div>
+					<div class="download-copy">
+						<div class="copy" title="copy note">
+							<i class="fa-regular fa-copy"></i>
+						</div>
+
+						<div class="download-file" title="download note">
+							<i class="fa-solid fa-file-arrow-down"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="side-stuff">
+				<iframe src="hints.html" frameborder="0"></iframe>
+			</div>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<div class="close"><span>&times;</span></div>
+					<div class="as-docx">Word document(.docx)</div>
+					<div class="as-txt">text file(.txt)</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+	<script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
+</html>
